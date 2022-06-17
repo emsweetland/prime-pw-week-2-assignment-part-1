@@ -44,6 +44,7 @@ if( luckyNumber ===2 && adventurous ===true ){
 // console logs "I have enough pets" if the value of `pets` is equal to the value of `allowedPets`,
 // and console logs "Oh no, I have too many pets!"
 // if the value of `pets` is greater than the value of `allowedPets`.
+
 if ( pets < allowedPets ){
     console.log( 'i can have more pets!' )
 }
@@ -60,9 +61,20 @@ else{
 // assigns the highest value to `mostPets`. There's several possibilities --
 // be sure to think through all the scenarios. 
 // console.log `mostPets` after the conditional has run.
-let mostPets = pets + friendsPets;
-if ( pets + friendsPets === mostPets ){
-    console.log ( 'most pets', mostPets )
+    pets = 2;
+    friendsPets = 3;
+let mostPets = 0;
+if( pets > friendsPets ){  
+    mostPets = pets
+    console.log(mostPets)       
+}
+else if (friendsPets > pets ){
+    mostPets = friendsPets
+    console.log(mostPets)
+}
+else{
+    mostPets = pets 
+    console.log(mostPets)  
 }
 // 17 - Write a *switch* statement that logs:
 //      "First is the worst" if your lucky number is 1
